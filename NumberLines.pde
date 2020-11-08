@@ -41,9 +41,7 @@ void drawNumberLine() {
   }
   marks.sort();
   
-  String[] markNames = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};  
-  
-  noSmooth();
+  String[] markNames = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
  
   // Draw line
   stroke(0);
@@ -62,8 +60,6 @@ void drawNumberLine() {
   for (float i = start; i < end; i+=step) {
     line(i * scale, -5, i * scale, 0);
   }
-
-  smooth();
   
   // Label whole numbers
   textSize(22);
